@@ -1,10 +1,14 @@
-Gig Engine Matching API
-The Gig Engine is a high-performance, asynchronous backend API built with FastAPI. It is designed to automate and streamline the lifecycle of a modern gig-economy platform by managing a dynamic marketplace of independent contractors (workers) and inbound assignments (tasks). The system programmatically pairs open tasks with the most qualified, available workers in real-time based on skillset matching.
+# 🚀 Gig Engine Matching API
 
-🏗️ Project Architecture
+The **Gig Engine** is a high-performance, asynchronous backend API built with **FastAPI**. It is designed to automate and streamline the lifecycle of a modern gig-economy platform by managing a dynamic marketplace of independent contractors (**workers**) and inbound assignments (**tasks**). The system programmatically pairs open tasks with the most qualified, available workers in real-time based on skillset matching.
+
+---
+
+## 🏗️ Project Architecture
+
 The codebase is organized into modular layers separating database persistence, business validation, API routing, and matching logic:
 
-Plaintext
+```text
 gig-engine/
 ├── app/
 │   ├── __init__.py
@@ -29,13 +33,3 @@ gig-engine/
 ├── .gitignore            # Git exclusion rules
 ├── pytest.ini            # Pytest execution settings
 └── requirements.txt      # Project library dependencies
-🛠️ Tech Stack
-Core Framework: FastAPI (Python)
-
-Database ORM: SQLAlchemy
-
-Data Validation: Pydantic
-
-Testing Suite: Pytest & HTTPX
-
-Configuration: Dotenv
